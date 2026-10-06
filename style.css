@@ -1,0 +1,164 @@
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Style dengan efek Glassmorphism */
+.card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 242, 254, 0.2);
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+}
+
+.avatar-wrapper {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00f2fe;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+    transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.08) rotate(3deg);
+}
+
+.glow-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6);
+}
+
+.tagline {
+    font-size: 0.95rem;
+    color: #4facfe;
+    margin-top: 5px;
+}
+
+/* Info Grid */
+h2, h3 {
+    color: #00f2fe;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.info-item {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid #00f2fe;
+}
+
+.info-item .label {
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+}
+
+.info-item .value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* About Me */
+.about-me p {
+    line-height: 1.6;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.activity-list {
+    list-style: none;
+}
+
+.activity-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #d1d1d1;
+}
+
+.activity-list li::before {
+    content: "🚀";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Social Link Button */
+.social-card {
+    text-align: center;
+}
+
+.btn-instagram {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-instagram:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(220, 39, 67, 0.7);
+}
+
